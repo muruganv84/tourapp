@@ -1,0 +1,57 @@
+ <!-- header -->
+ 
+ 
+ <header class="bg-white py-1">
+    <div class="container">
+      <nav class="navbar navbar-expand-lg navbar-light">
+  
+        
+        <h1>
+          <a routerLink="/home" class="navbar-brand">Tour Guide</a>
+        </h1>
+        
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+  
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-lg-4 mr-auto">
+  
+                <li class="nav-item">
+                <a class="nav-link" routerLink="">Features</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" routerLink="">Enter Location Details</a>
+                </li>
+              
+          </ul>
+          <div class="header-right">
+              
+            <a routerLink="" class="signin mr-4"> Welcome Guide <i class="fas fa-sign-in-alt"></i></a>
+            <a routerLink="/home" class="contact">Logout</a>
+          </div>
+      
+        </div>
+  
+        </nav>
+    </div>
+  </header>
+  <!-- //header -->
+  
+        
+    <!-- dropdown nav -->
+    <script>
+        $(document).ready(function() {
+            $(".dropdown").hover(
+                function() {
+                    $('.dropdown-menu', this).stop(true, true).slideDown("fast");
+                    $(this).toggleClass('open');
+                },
+                function() {
+                    $('.dropdown-menu', this).stop(true, true).slideUp("fast");
+                    $(this).toggleClass('open');
+                }
+            );
+        });
+    </script>
+    <!-- //dropdown nav -->

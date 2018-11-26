@@ -1,0 +1,63 @@
+<!-- header -->
+
+
+<header class="bg-white py-1">
+    <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-light">
+
+
+            <h1>
+                <a routerLink="/home" class="navbar-brand">Tour Guide</a>
+            </h1>
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-lg-4 mr-auto">
+
+                    <li class="nav-item">
+                        <a class="nav-link" routerLink="/features">Features</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" routerLink="/trip">Plan a Trip</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" routerLink="">Hotspots</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" routerLink="/guide-login">Guide Login</a>
+                    </li>
+                    </ul>
+                <div class="header-right">
+
+                    <a routerLink="/signin" class="signin mr-4"> Login <i class="fas fa-sign-in-alt"></i></a>
+                    <a routerLink="/signup" class="contact">Register</a>
+                </div>
+
+            </div>
+
+        </nav>
+    </div>
+</header>
+<!-- //header -->
+
+
+<!-- dropdown nav -->
+<script>
+    $(document).ready(function () {
+        $(".dropdown").hover(
+            function () {
+                $('.dropdown-menu', this).stop(true, true).slideDown("fast");
+                $(this).toggleClass('open');
+            },
+            function () {
+                $('.dropdown-menu', this).stop(true, true).slideUp("fast");
+                $(this).toggleClass('open');
+            }
+        );
+    });
+</script>
+<!-- //dropdown nav -->
